@@ -1,0 +1,22 @@
+username = "carneil"
+password = "carneilsimon"
+
+x = 1
+
+while x == 1:
+
+    a = input("enter username:")
+    b = input("enter password:")
+
+    if a == username and b != password:
+        print("correct username wrong password")
+        x+=0
+    elif b == password and a != username:
+        print("correct password wrong username")
+        x+=0
+    elif a == username and b == password:
+        print("correct username and password")
+        break
+    else:
+        print("wrong username and password")
+        x+=0
